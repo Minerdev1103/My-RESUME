@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorayut Thamsanong</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--slickJS-->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <video poster="https://videos.pexels.com/video-files/2611250/2611250-uhd_2560_1440_30fps.jpg" playsinline autoplay
+        muted loop>
+        <source src="https://videos.pexels.com/video-files/2611250/2611250-uhd_2560_1440_30fps.webm" type="video/webm">
+        <source src="https://videos.pexels.com/video-files/2611250/2611250-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+
+
+    <header>
+        <h1>Welcome My Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="certifacate.html">Certifacate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Certificate</h2>
+    <div class="certificate">
+        <div class="item">
+            <img src="Photo/c1.png" alt="My Profile Picture" width="200">
+        </div>
+        <div class="item">
+            <img src="Photo/c2.png" alt="My Profile Picture" width="200">
+        </div>
+        <div class="item">
+            <img src="Photo/c3.png" alt="My Profile Picture" width="200">
+        </div>
+        <div class="item">
+            <img src="Photo/c4.png" alt="My Profile Picture" width="200">
+        </div>
+        <div class="item">
+            <img src="Photo/c5.png" alt="My Profile Picture" width="200">
+        </div>
+        <div class="item">
+            <img src="Photo/c6.png" alt="My Profile Picture" width="200">
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            $('.certificate').slick({ dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000, });
+            $(".certificate .slick-prev").html('<i class="fa-solid fa-chevron-left"></i>')
+            $(".certificate .slick-next").html('<i class="fa-solid fa-chevron-right"></i>')
+            $(".certificate .slick-dots li").html('')
+          
+        })
+    </script>
+
+
+
+</body>
+
+</html>

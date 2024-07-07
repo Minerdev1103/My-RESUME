@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #484848;
+    color: #333;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;/* ส่งวิดีโอไปอยู่เบื้องหลัง */
+    object-fit: cover;/*ทำให้ขึงเต็มจอ*/
+    background-size: cover; /* ปรับขนาดภาพให้ครอบคลุมทั้งหน้า */
+    background-repeat: no-repeat;/* ไม่ให้ภาพซ้ำ */
+
+}
+
+
+header {
+    width: 100;
+    text-align: center;
+    color: white;
+    transition: .4s;
+    
+}
+
+header:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+}
+nav ul li a:hover {
+    background: #9c9b9c;
+    transition: .6s;
+    padding: 0;
+    
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+section#about {
+    text-align: center;
+}
+
+section#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#projects ul li {
+    margin: 5px 0;
+}
+
+section#about h2 {
+
+    color: white;
+
+}
+
+section#about p {
+    margin-top: 5%;
+    color: white;
+}
+
+section#about img {
+    margin-top: 5%;
+    width: 300px; /* ปรับขนาดตามต้องการ */
+    height: auto; /* ปรับขนาดอัตโนมัติตามสัดส่วน */
+    border-radius: 50%; /* ทำให้มุมของภาพโค้งมน (ถ้าต้องการ) */
+    box-shadow: 50px 10px 20px rgba(0, 0, 0, 0.5); /* กำหนดเงา */
+    transition: box-shadow 0.3s; /* เพิ่มการเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+/* เอฟเฟกต์ hover เพื่อเพิ่มเงา */
+section#about img:hover {
+    box-shadow: 15px 15px 25px rgba(251, 251, 251, 0.7);
+
+}
+
+
+
+/* certificate page */
+
+
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.certificate {
+    position: relative;
+    max-width: 700px;
+    max-height: 500px;
+    margin: 0 auto;
+    margin-top: 5%;
+
+}
+.certificate img{
+    width: 700px; /* ขนาดของรูปภาพ */
+    height: 500px;
+    border-radius: 10px; /* มุมโค้งมน */
+}
+
+.certificate .slick-prev{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    z-index: 10;
+}
+.certificate .slick-prev:hover{
+    background: #535353;
+    transition: .4s;
+}
+
+.certificate .slick-next{
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    z-index: 10;
+}
+.certificate .slick-next:hover{
+    background: #535353;
+    transition: .4s;
+}
+
+.certificate .slick-arrow{
+   z-index: 10px;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   border: none;
+   outline: none;
+}
+
+.certificate .slick-dots{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    right: 1%;
+   
+
+}
+
+.certificate .slick-dots li{
+    list-style: none;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    
+}
+.certificate .slick-active{
+    background: rgb(233, 242, 242) !important;
+
+}
+
