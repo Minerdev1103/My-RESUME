@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorayut Thamsanong</title>
+    <title>Welcome My Port</title>
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/css/foundation.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 
@@ -34,10 +35,27 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I continuously push myself to become an effective developer. I love learning different programming languages, <br>and every time I write code, it challenges me and motivates me to improve my skills further. In the future, I aspire to develop myself into a Full-Stack Developer.</p>
-        <img src="Photo/Ellipse 1.png" alt="My Profile Picture" width="200">
     </section>
    
+    <div class="container">
+        <img src="Photo/RESUME.jpg" alt="หมุนรูปตามเมาส์">
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const img = document.querySelector('img');
+
+        container.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.clientX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.clientY) / 25;
+
+            img.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        container.addEventListener('mouseleave', () => {
+            img.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        });
+    </script>
 
 
 
